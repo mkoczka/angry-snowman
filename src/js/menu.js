@@ -6,29 +6,22 @@
   Menu.prototype = {
     create: function () {
       this.game.stage.backgroundColor = '#d5e0f6';
-      var gameName = this.add.text(this.game.width / 2, this.game.height / 5, 'Angry Snowman', {
-        font: '42px Arial',
+
+      this.add.image(0, 500 - 352, 'snowmanPresents');
+
+      this.add.text(60, 50, 'Angry Snowman', {
+        font: '42px yard',
         fill: '#c6546b'
       });
 
-      gameName.anchor.set(0.5);
+      var newGameBtn = this.add.image(180, 130, 'newGameBtn');
 
-      var newGameBtn = this.add.text(this.game.width / 2, this.game.height / 2, 'Nova hra', {
-        font: '20px Arial',
-        fill: '#c6546b'
-      });
-
-      newGameBtn.anchor.set(0.5);
       newGameBtn.inputEnabled = true;
       newGameBtn.input.useHandCursor = true;
       newGameBtn.events.onInputDown.add(this.onNewGameClick, this);
 
-      var scoreBtn = this.add.text(this.game.width / 1.5, this.game.height / 2, 'Tabulka', {
-        font: '20px Arial',
-        fill: '#c6546b'
-      });
+      var scoreBtn = this.add.image(340, 130, 'scoreBtn');
 
-      scoreBtn.anchor.set(0.5);
       scoreBtn.inputEnabled = true;
       scoreBtn.input.useHandCursor = true;
       scoreBtn.events.onInputDown.add(this.onScoreClick, this);

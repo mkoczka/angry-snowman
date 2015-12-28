@@ -6,6 +6,11 @@
   Boot.prototype = {
     preload: function () {
       this.load.image('preloader', 'assets/preloader.gif');
+      this.load.image('snowmanPresents', 'assets/snowman-presents.png');
+      this.load.image('newGameBtn', 'assets/newgame-btn.png');
+      this.load.image('scoreBtn', 'assets/score-btn.png');
+      this.load.image('back', 'assets/back.png');
+      this.load.bitmapFont('yard', 'assets/font.png', 'assets/font.fnt');
     },
 
     create: function () {
