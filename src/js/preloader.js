@@ -22,7 +22,6 @@
     },
 
     create: function () {
-
     },
 
     update: function () {

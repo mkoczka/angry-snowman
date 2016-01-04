@@ -30,6 +30,9 @@
       graphics.beginFill(0xFFFFFF);
       graphics.drawRoundedRect(0, 0, 460, 380, 20);
       graphics.endFill();
+
+      var newGameText = this.add.image(this.game.width - 170, 60, 'newGameText');
+      var backText = this.add.image(65, 60, 'backText');
     },
 
     update: function () {
