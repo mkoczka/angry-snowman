@@ -7,6 +7,8 @@
     create: function () {
       this.game.stage.backgroundColor = '#d5e0f6';
 
+      this.add.image(0, 0, 'bg');
+
       this.add.image(0, 500 - 352, 'snowmanPresents');
 
       this.add.text(60, 50, 'Angry Snowman', {

@@ -17,6 +17,7 @@
       this.load.image('pixel', 'assets/pixel.png');
       this.load.image('top', 'assets/top.png');
       this.load.image('pauseBtn', 'assets/pause-btn.png');
+      this.load.image('bg', 'assets/bg.png');
       this.load.bitmapFont('yard', 'assets/font.png', 'assets/font.fnt');
     },
 

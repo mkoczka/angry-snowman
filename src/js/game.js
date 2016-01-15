@@ -10,6 +10,9 @@
       this.cameraYMin = 99999;
       this.platformYMin = 99999;
 
+      var bg = this.add.image(0, 0, 'bg');
+      bg.fixedToCamera = true;
+
       this.physics.startSystem( Phaser.Physics.ARCADE );
       this.platformsCreate();
       this.heroCreate();
@@ -90,12 +93,12 @@
       // platform basic setup
       this.platforms = this.add.group();
       this.platforms.enableBody = true;
-      this.platforms.createMultiple( 16, 'pixel' );
+      this.platforms.createMultiple( 13, 'pixel' );
 
       // create the base platform, with buffer on either side so that the hero doesn't fall through
       this.platformsCreateOne( -16, this.world.height - 16, this.world.width + 16 );
       // create a batch of platforms that start to move up the level
-      for( var i = 0; i < 15; i++ ) {
+      for( var i = 0; i < 12; i++ ) {
         this.platformsCreateOne( this.rnd.integerInRange( 0, this.world.width - 50 ), Math.random() * 500, this.rnd.integerInRange(49, 100) );
       }
     },
