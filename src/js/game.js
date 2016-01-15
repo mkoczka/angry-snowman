@@ -9,6 +9,7 @@
       this.paused = false;
       this.cameraYMin = 99999;
       this.platformYMin = 99999;
+      this.name = this.name || '';
 
       var bg = this.add.image(0, 0, 'bg');
       bg.fixedToCamera = true;
@@ -16,6 +17,10 @@
       this.physics.startSystem( Phaser.Physics.ARCADE );
       this.platformsCreate();
       this.heroCreate();
+
+      this.enemy = this.add.sprite(100, 100, 'ice');
+      this.physics.enable(this.enemy, Phaser.Physics.ARCADE);
+      this.enemy.body.immovable = true;
 
       var topImage = this.add.image(0, 0, 'top');
       topImage.fixedToCamera = true;
@@ -57,7 +62,25 @@
       this.scoreText.setText('Score: ' + this.score);
 
       this.physics.arcade.collide( this.hero, this.platforms );
+
+      this.enemy.visible = this.score > 1000;
+
+      if (this.score % 1000 < 20) {
+        if (this.enemy.visible) {
+          this.enemy.y = -this.score;
+        }
+      }
+
+      if (this.enemy.visible) {
+        this.physics.arcade.collide(this.hero, this.enemy, this.collideIce, null, this);
+      }
+
       this.heroMove();
+
+      this.enemy.body.velocity.x = 100;
+      if (this.enemy.x > 550) {
+        this.enemy.x = -50;
+      }
 
       // for each plat form, find out which is the highest
       // if one goes below the camera view, then create a new one at a distance from the highest one
@@ -69,6 +92,10 @@
           this.platformsCreateOne( this.rnd.integerInRange( 0, this.world.width - 50 ), this.platformYMin - 100, this.rnd.integerInRange(40, 100) );
         }
       }, this );
+    },
+
+    collideIce: function() {
+      this.endGame();
     },
 
     heroCreate: function () {
@@ -84,9 +111,6 @@
       // disable all collisions except for down
       this.hero.body.setSize(40, 130, 0, 5);
       this.hero.body.gravity.y = 1000;
-      this.hero.body.checkCollision.up = false;
-      this.hero.body.checkCollision.left = false;
-      this.hero.body.checkCollision.right = false;
     },
 
     platformsCreate: function() {
@@ -107,6 +131,9 @@
       // this is a helper function since writing all of this out can get verbose elsewhere
       var platform = this.platforms.getFirstDead();
       platform.reset( x, y );
+      platform.body.checkCollision.down = false;
+      platform.body.checkCollision.left = false;
+      platform.body.checkCollision.right = false;
       platform.scale.x = width;
       platform.scale.y = 16;
       platform.body.immovable = true;
@@ -136,8 +163,15 @@
 
       // if the hero falls below the camera view, gameover
       if( this.hero.y > this.cameraYMin + this.game.height && this.hero.alive ) {
-        this.state.start( 'score' );
+        this.endGame();
       }
+    },
+
+    endGame: function() {
+      if (!this.name) {
+        this.name = prompt('Koniec Hry. Zadaj meno') || 'Bez mena';
+      }
+      this.state.start( 'score' );
     },
 
     shutdown: function() {

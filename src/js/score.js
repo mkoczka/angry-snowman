@@ -10,6 +10,39 @@
         fill: '#c6546b'
       });
 
+      this.name = this.game.state.states.game.name;
+      this.lastScore = this.game.state.states.game.score;
+
+      this.game.state.states.game.score = null;
+
+      if (!localStorage.snowman) {
+        localStorage.snowman = JSON.stringify({});
+      }
+
+      this.storage = JSON.parse(localStorage.snowman);
+
+      var scores = this.storage.scores || [];
+
+      if (this.lastScore) {
+        scores.push({
+          name: this.name,
+          score: this.lastScore
+        });
+      }
+
+      scores = scores.sort(function(a, b) {
+        if (a.score < b.score) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+
+      scores = scores.slice(0, 6);
+
+      this.storage.scores = scores;
+      localStorage.snowman = JSON.stringify(this.storage);
+
       var backBtn = this.add.image(50, 50, 'back');
       backBtn.angle += 180;
 
@@ -31,8 +64,21 @@
       graphics.drawRoundedRect(0, 0, 460, 380, 20);
       graphics.endFill();
 
-      var newGameText = this.add.image(this.game.width - 170, 60, 'newGameText');
-      var backText = this.add.image(65, 60, 'backText');
+      this.add.image(this.game.width - 170, 60, 'newGameText');
+      this.add.image(65, 60, 'backText');
+
+      var self = this;
+      scores.forEach(function(score, i) {
+        self.add.text(70, 140 + (i * 50), i + 1 + ', ' + score.name, {
+          font: '30px yard',
+          fill: '#c6546b'
+        });
+
+        self.add.text(460, 140 + (i * 50), score.score, {
+          font: '30px yard',
+          fill: '#c6546b'
+        }).anchor.set(1, 0);
+      });
     },
 
     update: function () {
