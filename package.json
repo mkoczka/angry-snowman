@@ -28,5 +28,8 @@
     "start": "node ./node_modules/gulp/bin/gulp.js",
     "build": "node ./node_modules/gulp/bin/gulp.js build",
     "lint": "node ./node_modules/gulp/bin/gulp.js lint"
+  },
+  "engines": {
+    "node": "0.12.7"
   }
 }
