@@ -18,7 +18,7 @@
       this.platformsCreate();
       this.heroCreate();
 
-      this.enemy = this.add.sprite(100, 100, 'ice');
+      this.enemy = this.add.sprite(100, 200, 'ice');
       this.physics.enable(this.enemy, Phaser.Physics.ARCADE);
       this.enemy.body.immovable = true;
 
