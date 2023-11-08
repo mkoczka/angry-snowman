@@ -1,0 +1,232 @@
+
+:root {
+    --color-semantic-primary: #0f62fe; /* Primary interactive color */
+    --color-semantic-success: #00a454; /* Success states, Confirm actions */
+    --color-semantic-critical: #d23031; /* Failure states, actions which can not be undone */
+    --color-semantic-warning: #e36b00; /* Use when something is wrong but not critical */
+    --color-on-light-foreground-black: #040a1e; /* 
+          ⚪️ Use only on LIGHT Background
+          
+          ✏️ Headings */
+    --color-on-light-foreground-01: #2f344d; /* 
+          ⚪️ Use only on LIGHT Background
+          
+          ✏️ Primary texts, Icons */
+    --color-on-light-foreground-02: #676d8a; /* 
+          ⚪️ Use only on LIGHT Background
+          
+          ✏️ Only for hover of Foreground 03 */
+    --color-on-light-foreground-03: #888da7; /* 
+          ⚪️ Use only on LIGHT Background
+          
+          ✏️ Secondary texts, Icons */
+    --color-on-light-foreground-04: #a4a8bc; /* 
+          ⚪️ Use only on LIGHT Background
+          
+          ✏️ Placeholders, Disabled texts, Default Icon color if alone */
+    --color-on-light-border-low-contrast: #f3f4f8; /* 
+          ⚪️ Use on LIGHT Background
+          
+          ✏️ Dividers, Disabled Borders, Structural layout */
+    --color-on-light-border-medium-contrast: #dddfe7; /* 
+          ⚪️ Use on LIGHT Background
+          
+          ✏️ Dividers, Borders, Structural layout */
+    --color-on-dark-foreground-white: #ffffff; 
+    --color-on-dark-foreground-01: #dddfe7; 
+    --color-on-dark-foreground-02: #888da7; 
+    --color-on-dark-foreground-03: #676d8a; 
+    --color-on-dark-border-white: #ffffff; 
+    --color-on-dark-border-low-contrast: #1b1f2f; /* 
+          ⚫️ Use on DARK Background
+          
+          ✏️ Dividers, Layout structure */
+    --color-on-dark-border-high-contrast: #2f344d; /* 
+          ⚫️ Use on DARK Background
+          
+          ✏️ Dividers, Input borders, Layout structure */
+    --color-light-background-white: #ffffff; /* ✏️ Only for neutral backgrounds */
+    --color-light-background-01: #f9f9fb; /* ✏️ Only for neutral backgrounds */
+    --color-light-background-02: #f3f4f8; /* ✏️ Only for neutral backgrounds */
+    --color-light-background-03: #dddfe7; /* ✏️ Only for neutral backgrounds */
+    --color-light-background-primary: #edf5ff; /* ✏️ Only for primary backgrounds */
+    --color-light-background-success: #d3fede; /* ✏️ Only for success backgrounds */
+    --color-light-background-critical: #fff0f0; /* ✏️ Only for critical backgrounds */
+    --color-dark-background-black: #040a1e; /* ✏️ Only for neutral backgrounds */
+    --color-dark-background-01: #0d142a; /* ✏️ Only for neutral backgrounds */
+    --color-dark-background-02: #1b1f2f; /* ✏️ Only for neutral backgrounds */
+    --color-dark-background-03: #2f344d; /* ✏️ Only for neutral backgrounds */
+    --color-states-semantic-primary-dark: #0043ce; 
+    --color-states-semantic-primary-light: #4589ff; 
+    --color-states-semantic-success-dark: #008141; 
+    --color-states-semantic-success-light: #4cbe75; 
+    --color-states-semantic-critical-dark: #9e2122; 
+    --color-states-semantic-critical-light: #f75556; 
+    --color-states-semantic-warning-dark: #ba4e00; 
+    --color-states-semantic-warning-light: #ff832b; 
+    --color-on-light-border-high-contrast: #c3c6d5; 
+    --color-special-blanket: #14161866; 
+    --color-code-directly-exported: #141618; 
+    --color-code-keywords: #4589ff; 
+    --color-code-numbers: #009e9e; 
+    --color-code-strings: #d23031; 
+    --color-code-functions: #008141; 
+    --color-code-methods: #874ce6; 
+    --color-code-control-symbols: #b28600; 
+    --color-code-code: #363a3e; 
+    --color-code-comment: #868f98; 
+    --color-autocomplete-snippet-light: #fef0f5; 
+    --color-autocomplete-snippet: #f44ca2; 
+    --color-autocomplete-snippet-dark: #cc2882; 
+    --color-autocomplete-variable-light: #d3fede; 
+    --color-autocomplete-variable: #00a454; 
+    --color-autocomplete-variable-dark: #008141; 
+    --color-autocomplete-method-light: #fcf4d6; 
+    --color-autocomplete-method: #b28600; 
+    --color-autocomplete-method-dark: #8e6a00; 
+    --color-autocomplete-transformer-light: #edf5ff; 
+    --color-autocomplete-transformer: #4589ff; 
+    --color-autocomplete-transformer-dark: #0f62fe; 
+    --color-base-white-0: #ffffff; /* Same as Primary/white */
+    --color-base-grey-5: #f9f9fa; 
+    --color-base-grey-10: #f2f4f5; 
+    --color-base-grey-20: #dce0e4; 
+    --color-base-grey-30: #c0c7ce; 
+    --color-base-grey-40: #9faab4; 
+    --color-base-grey-50: #868f98; 
+    --color-base-grey-60: #697077; 
+    --color-base-grey-70: #4e5358; 
+    --color-base-grey-80: #363a3e; 
+    --color-base-grey-90: #232629; 
+    --color-base-grey-95: #191c1e; 
+    --color-base-grey-100: #141618; /* Same as Primary/sn-black */
+    --color-base-blue-5: #f6faff; 
+    --color-base-blue-10: #edf5ff; 
+    --color-base-blue-20: #d0e2ff; 
+    --color-base-blue-30: #a6c8ff; 
+    --color-base-blue-40: #78a9ff; 
+    --color-base-blue-50: #4589ff; 
+    --color-base-blue-60: #0f62fe; 
+    --color-base-blue-70: #0043ce; 
+    --color-base-blue-80: #002d9c; 
+    --color-base-blue-90: #001d6c; 
+    --color-base-blue-95: #00175a; 
+    --color-base-blue-100: #001141; 
+    --color-base-green-5: #eafeef; 
+    --color-base-green-10: #d3fede; 
+    --color-base-green-20: #a4f1bb; 
+    --color-base-green-30: #7fda9b; 
+    --color-base-green-40: #4cbe75; 
+    --color-base-green-50: #00a454; 
+    --color-base-green-60: #008141; 
+    --color-base-green-70: #00602f; 
+    --color-base-green-80: #00431f; 
+    --color-base-green-90: #002d12; 
+    --color-base-green-95: #00250d; 
+    --color-base-green-100: #001a08; 
+    --color-base-red-5: #fff8f8; 
+    --color-base-red-10: #fff0f0; 
+    --color-base-red-20: #ffd6d6; 
+    --color-base-red-30: #ffb3b3; 
+    --color-base-red-40: #ff8484; 
+    --color-base-red-50: #f75556; 
+    --color-base-red-60: #d23031; /* Same as Accent/sn-red */
+    --color-base-red-70: #9e2122; 
+    --color-base-red-80: #711516; 
+    --color-base-red-90: #4e0b0c; 
+    --color-base-red-95: #400708; 
+    --color-base-red-100: #310505; 
+    --color-base-orange-5: #fff8f3; 
+    --color-base-orange-10: #fff2e8; 
+    --color-base-orange-20: #ffd9be; 
+    --color-base-orange-30: #ffb784; 
+    --color-base-orange-40: #ff832b; 
+    --color-base-orange-50: #e36b00; 
+    --color-base-orange-60: #ba4e00; 
+    --color-base-orange-70: #8a3800; 
+    --color-base-orange-80: #5e2900; 
+    --color-base-orange-90: #3e1a00; 
+    --color-base-orange-95: #331400; 
+    --color-base-orange-100: #231000; 
+    --color-base-purple-5: #faf9fe; 
+    --color-base-purple-10: #f5f2fd; 
+    --color-base-purple-20: #e3dbfa; 
+    --color-base-purple-30: #cebef7; 
+    --color-base-purple-40: #b49af2; 
+    --color-base-purple-50: #9f78ed; 
+    --color-base-purple-60: #874ce6; 
+    --color-base-purple-70: #6a2bbf; /* Use for icons and badges */
+    --color-base-purple-80: #4a1c89; /* Use for background with white text */
+    --color-base-purple-90: #321060; /* Use for icons */
+    --color-base-purple-95: #290c51; /* Use for text and icons */
+    --color-base-purple-100: #1e073e; /* Use for text and icons */
+    --color-base-pink-5: #fff8fa; 
+    --color-base-pink-10: #fef0f5; 
+    --color-base-pink-20: #fdd5e4; 
+    --color-base-pink-30: #fbb2cf; 
+    --color-base-pink-40: #f981b7; 
+    --color-base-pink-50: #f44ca2; 
+    --color-base-pink-60: #cc2882; 
+    --color-base-pink-70: #9a1b60; 
+    --color-base-pink-80: #730045; 
+    --color-base-pink-90: #50002e; 
+    --color-base-pink-95: #430026; 
+    --color-base-pink-100: #33001b; 
+    --color-base-yellow-5: #fdf9eb; 
+    --color-base-yellow-10: #fcf4d6; 
+    --color-base-yellow-20: #fadd99; 
+    --color-base-yellow-30: #f1c21b; 
+    --color-base-yellow-40: #d2a106; 
+    --color-base-yellow-50: #b28600; 
+    --color-base-yellow-60: #8e6a00; 
+    --color-base-yellow-70: #684e00; 
+    --color-base-yellow-80: #483700; 
+    --color-base-yellow-90: #302400; 
+    --color-base-yellow-95: #261c00; 
+    --color-base-yellow-100: #1c1500; 
+    --color-base-teal-5: #e7fefe; 
+    --color-base-teal-10: #cdfdfd; 
+    --color-base-teal-20: #83f1f1; 
+    --color-base-teal-30: #3ddbdb; 
+    --color-base-teal-40: #00bbbb; 
+    --color-base-teal-50: #009e9e; 
+    --color-base-teal-60: #1e7c7b; 
+    --color-base-teal-70: #005c5c; 
+    --color-base-teal-80: #004140; 
+    --color-base-teal-90: #002b2b; 
+    --color-base-teal-95: #002222; 
+    --color-base-teal-100: #001919; 
+    --color-states-light-background-primary-dark: #d0e2ff; 
+    --color-states-light-background-success-dark: #a4f1bb; 
+    --color-states-light-background-critical-dark: #ffd6d6; 
+    --color-states-light-background-warning-dark: #ffd9be; 
+    --color-light-background-warning: #fff2e8; /* ✏️ Only for warning backgrounds */
+    --color-special-blanket-dark: #14161899; 
+    --color-special-lighter-transparent-border: #ffffff3d; 
+    --color-special-darker-transparent-border: #00000014; 
+    --color-special-lighter-transparent-hover: #ffffff12; 
+    --color-special-darker-transparent-hover: #3d4c930f; 
+    --color-special-token-thumbnail-border-on-light: #1416181f; 
+    --color-special-token-thumbnail-border-on-dark: #ffffff3d; 
+    --color-special-primary-transparent-select: #4589ff3d; 
+    --color-special-primary-transparent-light: #4589ff14; 
+    --color-special-inline-code-background: #1416180f; 
+    --color-states-semantic-upgrade-light: #9f78ed; 
+    --color-states-semantic-upgrade-dark: #6a2bbf; 
+    --color-semantic-upgrade: #874ce6; /* ✏ Use for upgrading plan */
+    --color-light-background-upgrade: #f5f2fd; /* ✏️ Only for upgrade plan backgrounds */
+    --color-states-light-background-upgrade-dark: #e3dbfa; 
+    --color-dark-background-04: #474e6c; 
+    --color-base-dm-gray-5: #f9f9fb; 
+    --color-base-dm-gray-10: #f3f4f8; 
+    --color-base-dm-gray-20: #dddfe7; 
+    --color-base-dm-gray-30: #c3c6d5; 
+    --color-base-dm-gray-40: #a4a8bc; 
+    --color-base-dm-gray-50: #888da7; 
+    --color-base-dm-gray-60: #676d8a; 
+    --color-base-dm-gray-70: #474e6c; 
+    --color-base-dm-gray-80: #2f344d; 
+    --color-base-dm-gray-90: #1b1f2f; 
+    --color-base-dm-gray-95: #0d142a; 
+    --color-base-dm-gray-100: #040a1e; 
+}

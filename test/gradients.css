@@ -1,0 +1,15 @@
+
+:root {
+    --gradient-special-blanket-gradient: linear-gradient(
+          180deg,
+          #14161852 0%,   
+          #14161800 100%  
+        )
+        ;     
+    --gradient-special-fade: linear-gradient(
+          90deg,
+          #ffffff00 0%,   
+          #ffffff 100%  
+        )
+        ;     
+}
