@@ -1,0 +1,6 @@
+
+:root {
+    --shadowPopup: 0 8px 16px 0 rgba(4,10,30,1);  
+    --shadowHoverSmallArea: 0 4px 8px 0 rgba(4,10,30,0.08);  
+    --shadowHoverLargeArea: 0 4px 8px 0 rgba(4,10,30,0.04);  
+}
