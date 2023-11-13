@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 
+        Primary interactive color 
+    -->
+    <color name="semantic_primary">#ff0f62fe</color>
+    <!-- 
+        Success states, Confirm actions 
+    -->
+    <color name="semantic_success">#ff00a454</color>
+    <!-- 
+        Failure states, actions which can not be undone 
+    -->
+    <color name="semantic_critical">#ffd23031</color>
+    <!-- 
+        Use when something is wrong but not critical 
+    -->
+    <color name="semantic_warning">#ffe36b00</color>
+    <!-- 
+        ✏ Use for upgrading plan 
+    -->
+    <color name="semantic_upgrade">#ff874ce6</color>
+
+
+    <color name="states_semantic_primary_dark">#ff0043ce</color>
+    <color name="states_semantic_primary_light">#ff4589ff</color>
+    <color name="states_semantic_success_dark">#ff008141</color>
+    <color name="states_semantic_success_light">#ff4cbe75</color>
+    <color name="states_semantic_critical_dark">#ff9e2122</color>
+    <color name="states_semantic_critical_light">#fff75556</color>
+    <color name="states_semantic_warning_dark">#ffba4e00</color>
+    <color name="states_semantic_warning_light">#ffff832b</color>
+    <color name="states_semantic_upgrade_light">#ff9f78ed</color>
+    <color name="states_semantic_upgrade_dark">#ff6a2bbf</color>
+
+    <color name="states_light_background_primary_dark">#ffd0e2ff</color>
+    <color name="states_light_background_success_dark">#ffa4f1bb</color>
+    <color name="states_light_background_critical_dark">#ffffd6d6</color>
+    <color name="states_light_background_warning_dark">#ffffd9be</color>
+    <color name="states_light_background_upgrade_dark">#ffe3dbfa</color>
+
+    <!-- 
+        ⚪️ Use only on LIGHT Background
+        
+        ✏️ Headings 
+    -->
+    <color name="on_light_foreground_black">#ff040a1e</color>
+    <!-- 
+        ⚪️ Use only on LIGHT Background
+        
+        ✏️ Primary texts, Icons 
+    -->
+    <color name="on_light_foreground_01">#ff2f344d</color>
+    <!-- 
+        ⚪️ Use only on LIGHT Background
+        
+        ✏️ Only for hover of Foreground 03 
+    -->
+    <color name="on_light_foreground_02">#ff676d8a</color>
+    <!-- 
+        ⚪️ Use only on LIGHT Background
+        
+        ✏️ Secondary texts, Icons 
+    -->
+    <color name="on_light_foreground_03">#ff888da7</color>
+    <!-- 
+        ⚪️ Use only on LIGHT Background
+        
+        ✏️ Placeholders, Disabled texts, Default Icon color if alone 
+    -->
+    <color name="on_light_foreground_04">#ffa4a8bc</color>
+
+    <!-- 
+        ⚪️ Use on LIGHT Background
+        
+        ✏️ Dividers, Disabled Borders, Structural layout 
+    -->
+    <color name="on_light_border_low_contrast">#fff3f4f8</color>
+    <!-- 
+        ⚪️ Use on LIGHT Background
+        
+        ✏️ Dividers, Borders, Structural layout 
+    -->
+    <color name="on_light_border_medium_contrast">#ffdddfe7</color>
+    <color name="on_light_border_high_contrast">#ffc3c6d5</color>
+
+    <color name="on_dark_foreground_white">#ffffffff</color>
+    <color name="on_dark_foreground_01">#ffdddfe7</color>
+    <color name="on_dark_foreground_02">#ff888da7</color>
+    <color name="on_dark_foreground_03">#ff676d8a</color>
+
+    <color name="on_dark_border_white">#ffffffff</color>
+    <!-- 
+        ⚫️ Use on DARK Background
+        
+        ✏️ Dividers, Layout structure 
+    -->
+    <color name="on_dark_border_low_contrast">#ff1b1f2f</color>
+    <!-- 
+        ⚫️ Use on DARK Background
+        
+        ✏️ Dividers, Input borders, Layout structure 
+    -->
+    <color name="on_dark_border_high_contrast">#ff2f344d</color>
+
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="light_background_white">#ffffffff</color>
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="light_background_01">#fff9f9fb</color>
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="light_background_02">#fff3f4f8</color>
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="light_background_03">#ffdddfe7</color>
+    <!-- 
+        ✏️ Only for primary backgrounds 
+    -->
+    <color name="light_background_primary">#ffedf5ff</color>
+    <!-- 
+        ✏️ Only for success backgrounds 
+    -->
+    <color name="light_background_success">#ffd3fede</color>
+    <!-- 
+        ✏️ Only for critical backgrounds 
+    -->
+    <color name="light_background_critical">#fffff0f0</color>
+    <!-- 
+        ✏️ Only for warning backgrounds 
+    -->
+    <color name="light_background_warning">#fffff2e8</color>
+    <!-- 
+        ✏️ Only for upgrade plan backgrounds 
+    -->
+    <color name="light_background_upgrade">#fff5f2fd</color>
+
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="dark_background_black">#ff040a1e</color>
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="dark_background_01">#ff0d142a</color>
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="dark_background_02">#ff1b1f2f</color>
+    <!-- 
+        ✏️ Only for neutral backgrounds 
+    -->
+    <color name="dark_background_03">#ff2f344d</color>
+    <color name="dark_background_04">#ff474e6c</color>
+
+    <color name="special_blanket">#66141618</color>
+    <color name="special_blanket_dark">#99141618</color>
+    <color name="special_lighter_transparent_border">#3dffffff</color>
+    <color name="special_darker_transparent_border">#14000000</color>
+    <color name="special_lighter_transparent_hover">#12ffffff</color>
+    <color name="special_darker_transparent_hover">#0f3d4c93</color>
+    <color name="special_token_thumbnail_border_on_light">#1f141618</color>
+    <color name="special_token_thumbnail_border_on_dark">#3dffffff</color>
+    <color name="special_primary_transparent_select">#3d4589ff</color>
+    <color name="special_primary_transparent_light">#144589ff</color>
+    <color name="special_inline_code_background">#0f141618</color>
+
+
+    <!-- 
+        Same as Primary/white 
+    -->
+    <color name="base_white_0">#ffffffff</color>
+
+    <color name="base_grey_5">#fff9f9fa</color>
+    <color name="base_grey_10">#fff2f4f5</color>
+    <color name="base_grey_20">#ffdce0e4</color>
+    <color name="base_grey_30">#ffc0c7ce</color>
+    <color name="base_grey_40">#ff9faab4</color>
+    <color name="base_grey_50">#ff868f98</color>
+    <color name="base_grey_60">#ff697077</color>
+    <color name="base_grey_70">#ff4e5358</color>
+    <color name="base_grey_80">#ff363a3e</color>
+    <color name="base_grey_90">#ff232629</color>
+    <color name="base_grey_95">#ff191c1e</color>
+    <!-- 
+        Same as Primary/sn-black 
+    -->
+    <color name="base_grey_100">#ff141618</color>
+
+    <color name="base_yellow_5">#fffdf9eb</color>
+    <color name="base_yellow_10">#fffcf4d6</color>
+    <color name="base_yellow_20">#fffadd99</color>
+    <color name="base_yellow_30">#fff1c21b</color>
+    <color name="base_yellow_40">#ffd2a106</color>
+    <color name="base_yellow_50">#ffb28600</color>
+    <color name="base_yellow_60">#ff8e6a00</color>
+    <color name="base_yellow_70">#ff684e00</color>
+    <color name="base_yellow_80">#ff483700</color>
+    <color name="base_yellow_90">#ff302400</color>
+    <color name="base_yellow_95">#ff261c00</color>
+    <color name="base_yellow_100">#ff1c1500</color>
+
+    <color name="base_orange_5">#fffff8f3</color>
+    <color name="base_orange_10">#fffff2e8</color>
+    <color name="base_orange_20">#ffffd9be</color>
+    <color name="base_orange_30">#ffffb784</color>
+    <color name="base_orange_40">#ffff832b</color>
+    <color name="base_orange_50">#ffe36b00</color>
+    <color name="base_orange_60">#ffba4e00</color>
+    <color name="base_orange_70">#ff8a3800</color>
+    <color name="base_orange_80">#ff5e2900</color>
+    <color name="base_orange_90">#ff3e1a00</color>
+    <color name="base_orange_95">#ff331400</color>
+    <color name="base_orange_100">#ff231000</color>
+
+    <color name="base_pink_5">#fffff8fa</color>
+    <color name="base_pink_10">#fffef0f5</color>
+    <color name="base_pink_20">#fffdd5e4</color>
+    <color name="base_pink_30">#fffbb2cf</color>
+    <color name="base_pink_40">#fff981b7</color>
+    <color name="base_pink_50">#fff44ca2</color>
+    <color name="base_pink_60">#ffcc2882</color>
+    <color name="base_pink_70">#ff9a1b60</color>
+    <color name="base_pink_80">#ff730045</color>
+    <color name="base_pink_90">#ff50002e</color>
+    <color name="base_pink_95">#ff430026</color>
+    <color name="base_pink_100">#ff33001b</color>
+
+    <color name="base_purple_5">#fffaf9fe</color>
+    <color name="base_purple_10">#fff5f2fd</color>
+    <color name="base_purple_20">#ffe3dbfa</color>
+    <color name="base_purple_30">#ffcebef7</color>
+    <color name="base_purple_40">#ffb49af2</color>
+    <color name="base_purple_50">#ff9f78ed</color>
+    <color name="base_purple_60">#ff874ce6</color>
+    <!-- 
+        Use for icons and badges 
+    -->
+    <color name="base_purple_70">#ff6a2bbf</color>
+    <!-- 
+        Use for background with white text 
+    -->
+    <color name="base_purple_80">#ff4a1c89</color>
+    <!-- 
+        Use for icons 
+    -->
+    <color name="base_purple_90">#ff321060</color>
+    <!-- 
+        Use for text and icons 
+    -->
+    <color name="base_purple_95">#ff290c51</color>
+    <!-- 
+        Use for text and icons 
+    -->
+    <color name="base_purple_100">#ff1e073e</color>
+
+    <color name="base_green_5">#ffeafeef</color>
+    <color name="base_green_10">#ffd3fede</color>
+    <color name="base_green_20">#ffa4f1bb</color>
+    <color name="base_green_30">#ff7fda9b</color>
+    <color name="base_green_40">#ff4cbe75</color>
+    <color name="base_green_50">#ff00a454</color>
+    <color name="base_green_60">#ff008141</color>
+    <color name="base_green_70">#ff00602f</color>
+    <color name="base_green_80">#ff00431f</color>
+    <color name="base_green_90">#ff002d12</color>
+    <color name="base_green_95">#ff00250d</color>
+    <color name="base_green_100">#ff001a08</color>
+
+    <color name="base_teal_5">#ffe7fefe</color>
+    <color name="base_teal_10">#ffcdfdfd</color>
+    <color name="base_teal_20">#ff83f1f1</color>
+    <color name="base_teal_30">#ff3ddbdb</color>
+    <color name="base_teal_40">#ff00bbbb</color>
+    <color name="base_teal_50">#ff009e9e</color>
+    <color name="base_teal_60">#ff1e7c7b</color>
+    <color name="base_teal_70">#ff005c5c</color>
+    <color name="base_teal_80">#ff004140</color>
+    <color name="base_teal_90">#ff002b2b</color>
+    <color name="base_teal_95">#ff002222</color>
+    <color name="base_teal_100">#ff001919</color>
+
+    <color name="base_red_5">#fffff8f8</color>
+    <color name="base_red_10">#fffff0f0</color>
+    <color name="base_red_20">#ffffd6d6</color>
+    <color name="base_red_30">#ffffb3b3</color>
+    <color name="base_red_40">#ffff8484</color>
+    <color name="base_red_50">#fff75556</color>
+    <!-- 
+        Same as Accent/sn-red 
+    -->
+    <color name="base_red_60">#ffd23031</color>
+    <color name="base_red_70">#ff9e2122</color>
+    <color name="base_red_80">#ff711516</color>
+    <color name="base_red_90">#ff4e0b0c</color>
+    <color name="base_red_95">#ff400708</color>
+    <color name="base_red_100">#ff310505</color>
+
+    <color name="base_blue_5">#fff6faff</color>
+    <color name="base_blue_10">#ffedf5ff</color>
+    <color name="base_blue_20">#ffd0e2ff</color>
+    <color name="base_blue_30">#ffa6c8ff</color>
+    <color name="base_blue_40">#ff78a9ff</color>
+    <color name="base_blue_50">#ff4589ff</color>
+    <color name="base_blue_60">#ff0f62fe</color>
+    <color name="base_blue_70">#ff0043ce</color>
+    <color name="base_blue_80">#ff002d9c</color>
+    <color name="base_blue_90">#ff001d6c</color>
+    <color name="base_blue_95">#ff00175a</color>
+    <color name="base_blue_100">#ff001141</color>
+
+    <color name="base_dm_gray_5">#fff9f9fb</color>
+    <color name="base_dm_gray_10">#fff3f4f8</color>
+    <color name="base_dm_gray_20">#ffdddfe7</color>
+    <color name="base_dm_gray_30">#ffc3c6d5</color>
+    <color name="base_dm_gray_40">#ffa4a8bc</color>
+    <color name="base_dm_gray_50">#ff888da7</color>
+    <color name="base_dm_gray_60">#ff676d8a</color>
+    <color name="base_dm_gray_70">#ff474e6c</color>
+    <color name="base_dm_gray_80">#ff2f344d</color>
+    <color name="base_dm_gray_90">#ff1b1f2f</color>
+    <color name="base_dm_gray_95">#ff0d142a</color>
+    <color name="base_dm_gray_100">#ff040a1e</color>
+
+    <color name="code_directly_exported">#ff141618</color>
+    <color name="code_keywords">#ff4589ff</color>
+    <color name="code_numbers">#ff009e9e</color>
+    <color name="code_strings">#ffd23031</color>
+    <color name="code_functions">#ff008141</color>
+    <color name="code_methods">#ff874ce6</color>
+    <color name="code_control_symbols">#ffb28600</color>
+    <color name="code_code">#ff363a3e</color>
+    <color name="code_comment">#ff868f98</color>
+
+    <color name="autocomplete_snippet_light">#fffef0f5</color>
+    <color name="autocomplete_snippet">#fff44ca2</color>
+    <color name="autocomplete_snippet_dark">#ffcc2882</color>
+    <color name="autocomplete_variable_light">#ffd3fede</color>
+    <color name="autocomplete_variable">#ff00a454</color>
+    <color name="autocomplete_variable_dark">#ff008141</color>
+    <color name="autocomplete_method_light">#fffcf4d6</color>
+    <color name="autocomplete_method">#ffb28600</color>
+    <color name="autocomplete_method_dark">#ff8e6a00</color>
+    <color name="autocomplete_transformer_light">#ffedf5ff</color>
+    <color name="autocomplete_transformer">#ff4589ff</color>
+    <color name="autocomplete_transformer_dark">#ff0f62fe</color>
+
+
+</resources>
